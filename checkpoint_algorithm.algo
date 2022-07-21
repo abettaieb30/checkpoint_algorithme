@@ -1,0 +1,21 @@
+ALGORITHM test_algo
+        text : STRING
+        countlettre : INTEGER := 0;
+        nbwords : INTEGER := 0;
+        nbvowels := INTEGER := 0;
+        nbcaract := INTEGER := 0;
+
+    BEGIN 
+     READ(text)
+        WHILE (text[countlettre] <> '.') DO
+            IF (text[countlettre]=' ') THEN
+                nbwords = nbwords +1 ;
+            END_IF
+            IF (text[countlettre] in ['y','e','f','i','m']) THEN
+                nbvowels = nbvowels +1 ;
+            END_IF
+            countlettre = countlettre + 1 ;
+        END_WHILE
+        nbcaract = countlettre + 1;
+
+    END.
